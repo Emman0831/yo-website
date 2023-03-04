@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title> MY LAYOUT </title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Century;
+      }
+      :root {
+        --primary-color: #ff7613;
+        --text-color: #131212;
+      }
+      header {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        min-height: 100px;
+      }
+      ul {
+        float: right;
+        list-style-type: none;
+        margin-top: 30px;
+        min-height: 400px;
+        margin-right: 60px;
+        font-size: 22px;
+      }
+      ul li {
+        display: inline-block;
+      }
+      ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.5 ease;
+      }
+      ul li a:hover{
+        background-color: #fff;
+        color: #000;
+      }
+      ul li.active a:hover{
+        background-color: #fff;
+        color: #000;
+      }
+      ul li.active2 a{
+        background-color: #fff;
+        color: #000;
+      }
+      .logo img{
+        float: left;
+        width: 300px;
+        height: auto;
+        margin-top: -35px;
+        margin-left: -20px;
+      }
+      .main {
+        max-width: 2000px;
+        margin: auto;
+      }
+      .container {
+        font-family: sans-serif;
+        color: black;
+        max-width: 600px;
+        width: 300%;
+        display: grid;
+        padding: 5rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        margin-left: 10px;
+      }
+      img {
+        width: 60%;
+      }
+      .description {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--text-color);
+      }
+      .profile {
+        grid-column: 1/ -1;
+        margin-bottom: 2rem;
+      }
+      .group1 {
+        display: flex;
+        gap: 10rem;
+        margin-left: 320px;
+        margin-top: -100px;
+      }
+      .profile_container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .profile_profileImg {
+        max-width: 350px;
+        margin-top: -100px;
+      }
+      .first {
+        color: white;
+        font-weight: 200;
+        font-size: clamp(2rem, 8vw, 4rem);
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: -0.8rem;
+      }
+      .last {
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: clamp(2.5rem, 15vw, 7rem);
+        text-transform: uppercase;
+        display: block;
+      }
+      .text {
+        margin-left: 230px;
+        margin-top: -220px;
+      }
+      .profile_title {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      .dcs_item {
+        margin-top: 1rem;
+        font-size: 15px;
+      }
+      .dcs_name {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        margin-top: 25px;
+        color: white;
+      }
+      .dcs_dcs {
+        color: var(--text-color);
+      }
+      .title {
+        font-size: 17px;
+        text-transform: uppercase;
+        color: var(--primary-color);
+      }
+      .group2 {
+        margin-top: 10px;
+      }
+      .dcs_name2 {
+        text-transform: uppercase;
+        margin-top: 25px;
+        color: white;
+      }
+      .dcs_dcs2 {
+        margin-top: 4px;
+        color: var(--text-color);
+      }
+      @media screen and (max-width: 600px) {
+        :root {
+        --primary-color: #ff7613;
+        --text-color: #131212;
+        }
+        header {
+          background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg.jpg);
+          height: 100vh;
+          background-size: cover;
+          background-position: center;
+          min-height: 100px;
+        }
+        ul {
+          float: right;
+          list-style-type: none;
+          margin-top: 14px;
+          min-height: 70px;
+          margin-right: 2px;
+          font-size: 8.5px;
+        }
+        ul li {
+          display: inline-block;
+        }
+        ul li a{
+          text-decoration: none;
+          color: #fff;
+          padding: 2px 2px;
+          border: 1px solid transparent;
+          transition: 0.5 ease;
+        }
+        ul li a:hover{
+          background-color: #fff;
+          color: #000;
+        }
+        ul li.active a:hover{
+          background-color: #fff;
+          color: #000;
+        }
+        ul li.active2 a{
+          background-color: #fff;
+          color: #000;
+        }
+        .logo img{
+          float: left;
+          width: 130px;
+          height: auto;
+          margin-top: -17px;
+          margin-left: -13px;
+        }
+        .main {
+          max-width: 2000px;
+          margin: auto;
+        }
+        .container {
+        font-family: sans-serif;
+        color: black;
+        max-width: 600px;
+        width: 300%;
+        display: grid;
+        padding: 5rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-left: -20px;
+        }
+        img {
+          width: 50%;
+        }
+        .description {
+          margin-top: 0.2rem;
+          font-size: 0.5rem;
+          font-weight: 200;
+          color: var(--text-color);
+        }
+        .profile {
+          margin-bottom: 2rem;
+        }
+        .group1 {
+          gap: 10rem;
+          margin-left: 165px;
+          margin-top: -110px;
+        }
+        .profile_container {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .profile_profileImg {
+          max-width: 200px;
+          margin-top: -50px;
+        }
+        .first {
+          color: white;
+          font-weight: 200;
+          font-size: clamp(0.8rem, 4vw, 2rem);
+          text-transform: uppercase;
+          display: block;
+          margin-bottom: -0.2rem;
+        }
+        .last {
+          color: var(--primary-color);
+          font-weight: 700;
+          font-size: clamp(1rem, 5vw, 3rem);
+          text-transform: uppercase;
+          display: block;
+        }
+        .text {
+          margin-left: 105px;
+          margin-top: -125px;
+        }
+        .profile_title {
+          font-size: 0.6rem;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        .dcs_item {
+          margin-top: 1rem;
+          font-size: 17px;
+        }
+        .dcs_name {
+          font-size: 8px;
+          font-weight: 700;
+          margin-bottom: 5px;
+          text-transform: uppercase;
+          margin-top: -14px;
+          color: white;
+        }
+        .dcs_dcs {
+          color: var(--text-color);
+          font-size: 7px;
+          margin-top: -5px;
+        }
+        .title {
+          font-size: 9px;
+          text-transform: uppercase;
+          color: var(--primary-color);
+        }
+        .group2 {
+          margin-top: 10px;
+        }
+        .dcs_name2 {
+          text-transform: uppercase;
+          margin-top: -4px;
+          color: white;
+          font-size: 8px;
+        }
+        .dcs_dcs2 {
+          margin-top: 1px;
+          color: var(--text-color);
+          font-size: 7px;
+        }
+      }
+    </style>
+  </head>
+      
+  <body>
+    <header>
+      
+      <div class="main">
+        <dir class="logo">
+          <img src="logo.png">
+        </dir>
+        <ul>
+          <li class="active"><a href="mylayout.html"><i class="fa fa-home"></i> Home</a></li>
+          <li class="active2"><a href="aboutme.html"><i class="fa fa-caret-down"></i> About me</a></li>
+          <li class="active3"><a href="skill.html">Skills</a></li>
+          <li class="active4"><a href="experience.html">Experiences</a></li>
+          <li class="active5"><a href="educational.html">Educational Attainment</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="profile">
+          <div class="profile_container">
+            <div class="profile_profileImg">
+              <img src="profile.png" alt="Emmanuel Dimaligalig">
+            </div>
+            <div class="text">
+              <h1 class="profile_name">
+                <span class="first">
+                  Emmanuel
+                </span>
+                <span class="last">
+                  Dimaligalig
+                </span>
+              </h1>
+              <p class="profile_title">
+                Software Developer
+              </p>
+              <p class="description">
+                The truth is that the pain is very important, and the education<br> will be followed,
+                but it happens at such a time that there is a <br>lot of work and pain. Over the years, I will come.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group1">
+        <div class="dcs">
+          <h2 class="title">Description about me:</h2>
+          <div class="dcs_item">
+            <h3 class="dcs_name">Information</h3>
+            <p class="dcs_dcs">
+              My name is Emmanuel Fhonz R. Dimaligalig, I'm 15 years old, and currently<br> learning programming.
+            </p>
+            <div class="group2">
+              <div class="dcs_name2">
+                <h4>Hometown</h4>
+              </div>
+              <p class="dcs_dcs2">Quezon City, U.P. Diliman</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

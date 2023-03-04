@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title> MY LAYOUT </title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Century;
+      }
+      header {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        min-height: 100px;
+      }
+      ul {
+        float: right;
+        list-style-type: none;
+        margin-top: 30px;
+        min-height: 400px;
+        margin-right: 60px;
+        font-size: 22px;
+      }
+      ul li {
+        display: inline-block;
+      }
+      ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.5 ease;
+      }
+      ul li a:hover{
+        background-color: #fff;
+        color: #000;
+      }
+      ul li.active a:hover{
+        background-color: #fff;
+        color: #000;
+      }
+      ul li.active5 a{
+        background-color: #fff;
+        color: #000;
+      }
+      .logo img{
+        float: left;
+        width: 300px;
+        height: auto;
+        margin-top: -35px;
+        margin-left: -20px;
+      }
+      .main {
+        max-width: 2000px;
+        margin: auto;
+      }
+      @media screen and (max-width: 600px) {
+        header {
+          background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg.jpg);
+          height: 100vh;
+          background-size: cover;
+          background-position: center;
+          min-height: 100px;
+        }
+        ul {
+          float: right;
+          list-style-type: none;
+          margin-top: 14px;
+          min-height: 70px;
+          margin-right: 2px;
+          font-size: 8.5px;
+        }
+        ul li {
+          display: inline-block;
+        }
+        ul li a{
+          text-decoration: none;
+          color: #fff;
+          padding: 2px 2px;
+          border: 1px solid transparent;
+          transition: 0.5 ease;
+        }
+        ul li a:hover{
+          background-color: #fff;
+          color: #000;
+        }
+        ul li.active a:hover{
+          background-color: #fff;
+          color: #000;
+        }
+        ul li.active5 a{
+          background-color: #fff;
+          color: #000;
+        }
+        .logo img{
+          float: left;
+          width: 130px;
+          height: auto;
+          margin-top: -17px;
+          margin-left: -13px;
+        }
+        .main {
+          max-width: 2000px;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+      
+  <body>
+    <header>
+      
+      <div class="main">
+        <dir class="logo">
+          <img src="logo.png">
+        </dir>
+        <ul>
+          <li class="active"><a href="mylayout.html"><i class="fa fa-home"></i> Home</a></li>
+          <li class="active2"><a href="aboutme.html">About me</a></li>
+          <li class="active3"><a href="skill.html">Skills</a></li>
+          <li class="active4"><a href="experience.html">Experiences</a></li>
+          <li class="active5"><a href="educational.html"><i class="fa fa-caret-down"></i> Educational Attainment</a></li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>
